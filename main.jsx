@@ -35,16 +35,16 @@ const router = createBrowserRouter([
   },
 
   // Halaman Portal Admin
-  {
-    path: "/portal-admin",
-    element: <Portal />,
-    loader: async () => {
-      if (localStorage.token && localStorage.role !== "admin") {
-        return redirect("/master-data");
-      }
-      return null;
-    },
-  },
+  // {
+  //   path: "/portal-admin",
+  //   element: <Portal />,
+  //   loader: async () => {
+  //     if (localStorage.token && localStorage.role !== "admin") {
+  //       return redirect("/master-data");
+  //     }
+  //     return null;
+  //   },
+  // },
 
   // Login Sebagai User
   {
